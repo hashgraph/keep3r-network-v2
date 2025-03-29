@@ -12,12 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out github repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
         with:
           fetch-depth: 0
 
       - name: Install SSH Client
-        uses: webfactory/ssh-agent@v0.7.0
+        uses: webfactory/ssh-agent@836c84ec59a0e7bc0eabc79988384eb567561ee2 # v0.7.0
         with:
           ssh-private-key: ${{ secrets.SYNC_SSH_PRIVATE_KEY }}
 
